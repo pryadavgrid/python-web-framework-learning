@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+.env/
+dsa_venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Env files
+.env
+
+# Temp files
+TempCodeRunner/
+tempCodeRunnerFile.py
