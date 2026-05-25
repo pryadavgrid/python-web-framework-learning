@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI App</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+
+<body>
+
+    <h1>FastAPI Dashboard</h1>
+
+    <div class="container">
+
+        <!-- USERS -->
+        <div class="card">
+            <h2>Users</h2>
+
+            <input type="text" id="userName" placeholder="Enter name">
+            <input type="email" id="userEmail" placeholder="Enter email">
+
+            <button id="createUserBtn">Create User</button>
+            <button id="loadUsersBtn">Load Users</button>
+
+            <div id="userList"></div>
+        </div>
+
+        <!-- ITEMS -->
+        <div class="card">
+            <h2>Items</h2>
+
+            <input type="text" id="itemName" placeholder="Item name">
+            <input type="text" id="itemDetail" placeholder="Item detail">
+
+            <button id="createItemBtn">Create Item</button>
+            <button id="loadItemsBtn">Load Items</button>
+
+            <div id="itemList"></div>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', path='script.js') }}"></script>
+</body>
+
+</html>
